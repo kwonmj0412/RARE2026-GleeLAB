@@ -1,6 +1,7 @@
 # RARE 2026 — GleeLAB (CANDOR)
 
 **C**ross-center **A**daptive **N**eoplasia **D**etection via c**O**lor-normalized **R**obustness
+
 <img width="1197" height="421" alt="image" src="https://github.com/user-attachments/assets/d7c4a71e-e7c0-4d8d-954e-0170465bee4e" />
 
 Image-level detection of early Barrett's esophagus neoplasia under multi-center domain shift.
