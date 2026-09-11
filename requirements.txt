@@ -1,0 +1,23 @@
+# RARE 2026 — GleeLAB (CANDOR) requirements
+# Developed with PyTorch (CUDA, bf16). Pin versions to your environment as needed.
+
+# --- core DL ---
+torch>=2.1
+torchvision>=0.16
+timm>=0.9.16            # DINOv3 (vit_large_patch16_dinov3.lvd1689m), CAFormer, MaxViT backbones
+
+# --- numerics / data ---
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3      # roc_curve, roc_auc_score, LedoitWolf, NearestNeighbors
+
+# --- image / IO ---
+opencv-python>=4.8     # FOV crop, WB+CLAHE, resize, saliency overlays
+Pillow>=10.0
+openpyxl>=3.1          # reading selected_images_predictions.xlsx (analysis only)
+
+# Notes:
+# - LoRA is implemented in-repo (rank 8, targets qkv); no separate PEFT dependency required.
+# - Inference container (submission/Dockerfile) is based on the official pytorch/pytorch image;
+#   its Python deps are installed from this same requirements.txt inside the container.

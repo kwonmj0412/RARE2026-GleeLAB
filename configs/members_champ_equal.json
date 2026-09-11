@@ -1,0 +1,8 @@
+[
+  {"name":"rn50",         "backbone":"resnet50",   "ckpt":"./runs_5f_rn50_gastro5m",                    "weights":"/media/user/LG/RARE26/Gastronet-5M-pretrained-models/RN50_Billion-Scale-SWSL%2BGastroNet-5M_DINOv1.pth", "size":768, "cc":"none",     "lora":0, "w":1.0},
+  {"name":"gastro",       "backbone":"dinov3_vitl","ckpt":"./runs_5f_dinov3_gastro",                     "weights":"./runs_dino_dinov3_500k/dinov3_dino_ep1.pt", "size":768, "cc":"none",     "lora":8, "w":1.0},
+  {"name":"dinov3",       "backbone":"dinov3_vitl","ckpt":"./runs_5f_dinov3_res768",                     "weights":"none",   "size":768, "cc":"none",     "lora":8, "w":1.0},
+  {"name":"rn50_wbp",     "backbone":"resnet50",   "ckpt":"./runs_5f_rn50_gastro5m_wbclahe_pauc",        "weights":"/media/user/LG/RARE26/Gastronet-5M-pretrained-models/RN50_Billion-Scale-SWSL%2BGastroNet-5M_DINOv1.pth", "size":768, "cc":"wb_clahe", "lora":0, "w":1.0},
+  {"name":"gastro_wbpseg","backbone":"dinov3_vitl","ckpt":"./runs_5f_dinov3_gastro_wbclahe_pauc_seg",    "weights":"./runs_dino_dinov3_500k/dinov3_dino_ep1.pt", "size":768, "cc":"wb_clahe", "lora":8, "w":1.0},
+  {"name":"dinov3_wbp",   "backbone":"dinov3_vitl","ckpt":"./runs_5f_dinov3_res768_wbclahe_pauc",        "weights":"none",   "size":768, "cc":"wb_clahe", "lora":8, "w":1.0}
+]
