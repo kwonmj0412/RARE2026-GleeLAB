@@ -3,7 +3,7 @@
 **C**ross-center **A**daptive **N**eoplasia **D**etection via c**O**lor-normalized **R**obustness
 
 Image-level detection of early Barrett's esophagus neoplasia under multi-center domain shift.
-Submission for the [RARE 2026 Grand Challenge](https://rare25.grand-challenge.org/) (MICCAI 2026 EndoVis).
+Submission for the [RARE 2026 Grand Challenge](https://rare26.grand-challenge.org/) (MICCAI 2026 EndoVis).
 
 Team **GleeLAB**, Ajou University.
 
